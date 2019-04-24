@@ -24,7 +24,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.optDomainCorrection = new System.Windows.Forms.CheckBox();
             this.optVerificationType = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.cmbWhoIs = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.optTimeToWait = new System.Windows.Forms.ComboBox();
             this.tabResponse = new System.Windows.Forms.TabControl();
@@ -181,7 +183,9 @@
             // 
             this.groupBox1.Controls.Add(this.optDomainCorrection);
             this.groupBox1.Controls.Add(this.optVerificationType);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label17);
+            this.groupBox1.Controls.Add(this.cmbWhoIs);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.optTimeToWait);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -215,6 +219,15 @@
             this.optVerificationType.TabIndex = 87;
             this.optVerificationType.Text = "Express (Default)";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 205);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(116, 15);
+            this.label3.TabIndex = 79;
+            this.label3.Text = "WhoIS Domain Info";
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -223,6 +236,20 @@
             this.label17.Size = new System.Drawing.Size(79, 15);
             this.label17.TabIndex = 79;
             this.label17.Text = "Time to Wait";
+            // 
+            // cmbWhoIs
+            // 
+            this.cmbWhoIs.DropDownHeight = 108;
+            this.cmbWhoIs.FormattingEnabled = true;
+            this.cmbWhoIs.IntegralHeight = false;
+            this.cmbWhoIs.Items.AddRange(new object[] {
+            "Off",
+            "On (Default)"});
+            this.cmbWhoIs.Location = new System.Drawing.Point(6, 223);
+            this.cmbWhoIs.Name = "cmbWhoIs";
+            this.cmbWhoIs.Size = new System.Drawing.Size(227, 23);
+            this.cmbWhoIs.TabIndex = 76;
+            this.cmbWhoIs.Text = "On (Default)";
             // 
             // label7
             // 
@@ -428,6 +455,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox optTimeToWait;
         private System.Windows.Forms.CheckBox optDomainCorrection;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cmbWhoIs;
+
     }
 }
 

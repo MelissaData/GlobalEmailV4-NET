@@ -35,7 +35,15 @@ namespace GlobalEmail_NET
                 Options += "VerifyMailbox:Premium,";
 
             if (!optTimeToWait.SelectedIndex.Equals(1))
-                Options += "TimeToWait:" + (optTimeToWait.SelectedIndex + 1);
+                Options += "TimeToWait:2,";
+            else
+                Options += "TimeToWait:" + optTimeToWait.SelectedText+",";
+
+            if (!cmbWhoIs.SelectedIndex.Equals(1))
+                Options += "WhoISLookup:Off";
+            else
+                Options += "WhoIsLookup:On";
+
 
             RESTRequest += @"&opt=" + Options;
        
